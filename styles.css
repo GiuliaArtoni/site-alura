@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+  --branco-texto: #ffffff;
+  --botao-efeito: #39393980;
+  --cinza-texto: #c0c0c0;
+  --preto-fundo: #00030c;
+  --azul-botao: #167bf7;
+  --azul-botao-efeito: #1260c0;
+  --fonte-texto: "Inter";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+a:visited{
+    color: var(--branco-texto);
+}
+
+body {
+  background-color: var(--preto-fundo);
+  color: var(--branco-texto);
+  font-family: var(--fonte-texto);
+  font-size: 1em;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.secao{
+    align-items: center;
+}
+
+.secao_inicial {
+  background-image: url(./img/Background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+}
+
+.div_container {
+  margin: 0 6em;
+}
+
+.titulo_container {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+
+.img_container {
+  margin: 1em 0 2em 0;
+}
+
+.btn_container {
+  border-radius: 8px;
+  padding: 1em;
+  color: var(--branco-texto);
+  display: block;
+  margin-bottom: 1em;
+}
+
+.assinatura {
+  background-color: var(--azul-botao);
+  transition: .5s;
+}
+
+.assinatura:hover{
+    background-color: var(--azul-botao-efeito);
+}
+
+.assinatura_aluraplus {
+  border: 1px solid var(--branco-texto);
+  transition: .5s;
+}
+
+.assinatura_aluraplus:hover{
+    background-color: var(--botao-efeito);
+    
+}
+
+.texto_container {
+  font-size: 0.75em;
+  color: var(--cinza-texto);
+}
+
+.secao_margem{
+    margin: 0 10em;
+}
+
+.img_secao{
+    width: 80%;
+}
+
+.titulo_secao{
+    font-weight: 700;
+    font-size: 3em;
+    margin-bottom: 0.2em;
+}
+
+.texto_secao{
+    font-weight: 400;
+    font-size: 1em;
+    color: var(--cinza-texto);
+}
+
+.btn_tercearia{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container_dispositivos{
+    align-items: center;
+    text-align: center;
+    margin: 8em 0;
+}
+
+.div_dispositivos{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.texto_dispositivos{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.rodape{
+    margin: 8em 4em;
+    text-align: center;
+}
+
+.links_rodape{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 2em;
+}
+
+.texto_rodape{
+    font-size: 0.8em;
+    color: var(--cinza-texto);
+    margin: 2em;
+}
